@@ -1,0 +1,325 @@
+/******************************************************************
+          ___   __    ___  _  _   __   __     __  ____
+         / __) / _\  / __)/ )( \ / _\ (  )   /  \(_  _)
+        ( (__ /    \( (__ ) __ (/    \/ (_/\(  O ) )(
+         \___)\_/\_/ \___)\_)(_/\_/\_/\____/ \__/ (__) 1.5
+
+            https://github.com/tomablan/cachalot
+
+*******************************************************************
+
+    THEME TITLE
+
+    COLOR $SWATCH :  Black  #000
+                     White  #FFF
+
+    TITLE $FONTS :   Georgia, Times, Times New Roman, serif
+    BODY $FONTS :    Verdana, Geneva, sans-serif
+
+    Index :
+    1. Reset
+    2. Classes
+    3. Default Style
+    4. Layout
+    5. Pages
+    6. Modules
+******************************************************************/
+
+/******************************************************************
+    $RESET
+    "Eric Meyer's "Reset CSS" v2.0 Minified"
+    http://meyerweb.com/eric/tools/css/reset/
+******************************************************************/
+
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/***************************************************************************************************
+    $CLASSES
+    "Ready-to-use classes"
+**************************************************************************************************** */
+
+    /* Box model positionning */
+        .hidden {display:none}
+        .block_hidden_only_for_screen {display:none}
+        .float-right {float:right}
+        .float-left {float:left}
+        .clear-both {clear:both}
+        .clearfix:before, .clearfix:after { content: "."; display: block; height: 0; overflow: hidden } .clearfix:after {clear: both} .clearfix {zoom: 1}
+
+    /* Text positionning */
+        .align-center {text-align:center}
+        .align-left {text-align:left}
+        .align-right {text-align:right}
+        .align-justify {text-align:justify}
+
+    /* Text style */
+        .required {color:#990000}
+        .bold, strong{font-weight: bold}
+
+    /* Notification messages */
+        .warning {
+            margin:0 0 10px 0;
+            padding:10px;
+            border:1px solid #e6db55;
+            font-size:13px;
+            background:#ffffe0
+        }
+        .success {
+            margin:0 0 10px 0;
+            padding:10px;
+            border:1px solid #5cff74;
+            font-size:13px;
+            background: #d3ffab
+        }
+        .error {
+            margin:0 0 10px 0;
+            padding:10px;
+            border:1px solid #990000;
+            font-size:13px;
+            background:#ffcccc
+        }
+        .error ol {margin-left:20px}
+        .error p.lnk {
+            margin-top:20px;
+            padding:0;
+            font-size:11px
+        }
+
+    /* RTE (From a WYSIWYG) */
+    /* Repeat the rule with #tinymce to impact the Back Office */
+        .rte, #tinymce{line-height: 1.4em}
+        .rte strong, #tinymce strong{font-weight: bold}
+        .rte em, #tinymce em{text-decoration: underline}
+        .rte p, #tinymce p{padding-bottom: .5em}
+        .rte ul, #tinymce ul{padding-bottom: .5em}
+        .rte ul li, #tinymce ul li{list-style: inside circle}
+
+
+
+
+
+/* ************************************************************************************************
+   $DEFAULT STYLE
+    "Redefining general aspect of an element everywhere on the website"
+*************************************************************************************************** */
+
+    /* Basic text */
+        body{font:normal 12px/14px Arial, Verdana, sans-serif; color:#222;}
+
+    /* Titles */
+        .heading1{}
+        .heading2{}
+        .heading3{}
+        .heading4{}
+
+    /* Links */
+        a{
+            color:#333;
+            text-decoration:none;
+            outline: medium none
+        }
+        a:hover {text-decoration:underline}
+        a:active {text-decoration:underline}
+
+
+    /* Forms controls */
+        /* Buttons */
+        input[type="button"], input[type="submit"], .button{
+            display: inline-block; *display: inline; *zoom:1;
+            border: 0 none;
+            outline: 0 none;
+            vertical-align: middle;
+            cursor: pointer;
+            padding:0;
+            margin: 0;
+        }
+        input[type="button"]:hover, input[type="submit"]:hover, .button:hover{}
+
+        /* Select list */
+        select{-webkit-appearance:none}
+
+        /* Text Fields */
+        input[type="text"], input[type="email"], input[type="password"]{
+            display: inline-block; *display: inline; *zoom:1;
+            padding:0;
+            margin:0;
+            border:0 none;
+            outline: 0 none;
+            vertical-align: middle;
+        }
+          /* Placeholders */
+          ::-webkit-input-placeholder {color: inherit;}
+          ::-moz-placeholder {color: inherit;}
+          :-ms-input-placeholder {color: inherit;}
+
+        textarea{
+            display: inline-block; *display: inline; *zoom:1;
+            padding:0;
+            margin:0;
+            border:0 none;
+            outline: 0 none;
+        }
+
+        /* Checkboxes */
+        input[type='checkbox']{
+            margin: 0;
+            vertical-align: middle
+        }
+
+        /* Radio buttons */
+        input[type='radio']{
+            margin: 0;
+            vertical-align: middle
+        }
+
+    /* Forms */
+      form.std p {padding-bottom:20px}
+
+      form.std .radio label{display:inline;}
+
+    /* Tables */
+        table.std{width: 100%;}
+
+        /* Header cell */
+        table.std th{}
+
+        /* Footer cell */
+        table.std tfoot td{}
+
+        /* Alternate line */
+        table.std tr.alternate_item{}
+
+    /* Tab */
+        .idTabs { list-style-type: none; }
+        .idTabs li { float: left; }
+        .idTabs a { display: block; }
+        .idTabs .selected { color: #000; }
+
+        .sheets{}
+
+
+
+
+    /* Breadcrumb */
+        .breadcrumb {}
+        .breadcrumb .navigation-pipe {}
+        .breadcrumb img {}
+
+    /* Footer Links */
+        ul.footer_links {list-style-type:none;}
+        ul.footer_links li {float:left}
+        ul.footer_links li .icon {}
+
+    /* Sorting and comparison */
+        .sortPagiBar {}
+        .content_sortPagiBar {}
+        .sortPagiBar strong {color:#000;}
+        .sortPagiBar p {padding:0;}
+        .sortPagiBar form {display:inline-block;}
+
+        .sortPagiBar #productsSortForm {float:right;}
+        .sortPagiBar select#selectPrductSort {}
+
+        #bt_compare {}
+
+        .sortPagiBar .nbrItemPage {margin-left:40px;}
+
+        .sortPagiBar .PrductSort {float:left;}
+
+        .sortPagiBar .nbrProduct {}
+
+        .sortPagiBar #nb_item {border:1px solid #ccc}
+
+    /* Pagination */
+        form.pagination {}
+        div.pagination {}
+        ul.pagination {list-style-type:none}
+
+        /* Each pages */
+        ul.pagination li {display: inline;}
+        ul.pagination a, ul.pagination span {display:inline-block;}
+        ul.pagination a {text-align:center;}
+        ul.pagination a:hover {}
+
+        /* Current page */
+        ul.pagination .current span {}
+
+        /* Previous button */
+        #pagination_previous {float:left}
+
+        /* Next button */
+        #pagination_next {float:right}
+
+        /* Disabled next or previous */
+        ul.pagination li.disabled span {}
+
+
+    /* Order steps */
+        ul#order_step {}
+        ul.step {list-style-type:none;}
+
+        /* Each steps */
+        ul.step li { float: left; text-align:center; }
+
+        /* Current Step */
+        ul.step li.step_current {font-weight:bold;}
+
+        /* Final step */
+        ul.step li.step_current_end {}
+
+        /* To do step */
+        ul.step li.step_todo span {}
+
+        /* Step done */
+        ul.step li.step_done {}
+
+
+
+
+
+/***************************************************************************************************
+    $LAYOUT
+    "Style and size of the main layout"
+**************************************************************************************************** */
+    body{}
+    #page {}
+        #header {}
+        #columns {}
+            #left_column {}
+            #center_column {}
+            #right_column {}
+        #footer {}
+
+
+
+
+
+/*************************************************************************************************
+    $PAGES
+    "Pages without their own CSS css stylesheet"
+*************************************************************************************************** */
+
+    /* index.tpl */
+
+    /* 404.tpl */
+
+    /* password.tpl */
+
+    /* order-carrier.tpl */
+    .delivery_option_carrier.not-displayable {
+        display: none;
+    }
+
+
+
+
+
+/*************************************************************************************************
+    $MODULES
+    "Modules without their own css stylesheet"
+*************************************************************************************************** */
+
+    /* Cheque */
+
+    /* Bankwire */
