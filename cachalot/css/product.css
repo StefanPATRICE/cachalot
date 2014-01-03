@@ -1,0 +1,113 @@
+/******************************************************************
+          ___   __    ___  _  _   __   __     __  ____
+         / __) / _\  / __)/ )( \ / _\ (  )   /  \(_  _)
+        ( (__ /    \( (__ ) __ (/    \/ (_/\(  O ) )(
+         \___)\_/\_/ \___)\_)(_/\_/\_/\____/ \__/ (__) 1.5
+
+            https://github.com/tomablan/cachalot
+
+*******************************************************************
+
+    Product Page
+
+    Index :
+    1. Main content
+    1. Left column
+    2. Right column
+    3. Tabs, lower part
+
+    Note : As a standalone version of this stylesheet, the left
+    column is named "pb-right-column", and the right one
+    "pb-left-column". So rely on the comments, and not the classes
+    names.
+
+/******************************************************************
+    $Main content
+******************************************************************/
+
+    #primary_block {margin-top:15px}
+
+/******************************************************************
+    $Left column
+******************************************************************/
+    #pb-right-column {
+        float:left;
+        width:266px
+    }
+        #image-block{
+            position: relative;
+        }
+
+            /* View Full Size Link */
+            #view_full_size {
+                cursor: pointer;
+            }
+            #view_full_size .span_link{
+                display:block;
+                text-align: center;
+            }
+
+
+
+        /* Miniatures */
+        #views_block {
+            margin-top:10px;
+            position: relative;
+        }
+
+            #thumbs_list {
+                width: 216px; /* thumb size * default number of thumbs */
+                overflow: hidden;
+                margin: 0 auto;
+            }
+
+                #thumbs_list_frame {
+                   list-style-type: none;
+                   padding-left: 0
+                }
+
+                    #thumbs_list li {
+                        float: left;
+                        width: 72px;
+                        height: 60px;
+                        cursor: pointer;
+                        text-align: center;
+                    }
+
+                /* Previous / Next Buttons */
+                #view_scroll_left, #view_scroll_right {
+                    position: absolute;
+                    bottom: 0;
+                    left:0;
+                    height: 18px;
+                    width: 9px;
+                }
+
+                #view_scroll_right {
+                    left: auto;
+                    right: 0;
+                }
+
+        /* Link to view all images when combination selected */
+        .resetimg {
+            padding-top: 10px
+        }
+
+
+
+    /* link list */
+    #usefull_link_block {
+        margin-top: 20px;
+    }
+
+        #usefull_link_block li {
+            padding: 2px 0;
+        }
+
+/******************************************************************
+    $Right Column
+******************************************************************/
+    #pb-left-column {
+        float:left;
+        width:50%;
+    }
