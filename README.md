@@ -11,6 +11,7 @@ cachalot follows few points as a "philisophy" of use. Here they are :
 + Meaningful, semantic and re-usable classes
 + No unecessary vendor prefix.
 + Web Performances first, as possible.
++ em for font-sizes, px for the rest.
 
 ## TODO List
 
