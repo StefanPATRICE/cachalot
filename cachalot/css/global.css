@@ -105,7 +105,10 @@
 *************************************************************************************************** */
 
     /* Basic text */
-        body{font:normal 12px/14px Arial, Verdana, sans-serif; color:#222;}
+        body {
+            font: normal 100%/112.5% Arial, Verdana, sans-serif; /* Gives a basic font size of 16px with 18px of line-height */
+            color: #222;
+        }
 
     /* Titles */
         .heading1{}
@@ -283,13 +286,13 @@
     "Style and size of the main layout"
 **************************************************************************************************** */
     body{}
-    #page {}
-        #header {}
-        #columns {}
-            #left_column {}
-            #center_column {}
-            #right_column {}
-        #footer {}
+    .main-wrapper {}
+        .site-header {}
+        .site-columns {}
+            .site-left-column {}
+            .site-center-column {}
+            .site-right-column {}
+        .site-footer {}
 
 
 
