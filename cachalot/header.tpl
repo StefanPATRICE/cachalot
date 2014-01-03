@@ -36,7 +36,7 @@
 		{$HOOK_HEADER}
 	</head>
 	
-	<body {if isset($page_name)}id="{$page_name|escape:'htmlall':'UTF-8'}"{/if} class="{if isset($page_name)}page-{$page_name|escape:'htmlall':'UTF-8'}{/if}{if !$content_only} content-only{/if}">
+	<body {if isset($page_name)}id="{$page_name|escape:'htmlall':'UTF-8'}"{/if} class="{if isset($page_name)}page-{$page_name|escape:'htmlall':'UTF-8'}{/if}{if $content_only} content-only{/if}">
 
 	{if !$content_only}
 		{if isset($restricted_country_mode) && $restricted_country_mode}
@@ -57,7 +57,7 @@
 				{$HOOK_TOP}
 			</div>
 
-			<div id="columns" class="columns">
+			<div id="columns" class="site-columns">
 
 				{* Left column *}
 				<div id="left_column" class="site-left-column">
