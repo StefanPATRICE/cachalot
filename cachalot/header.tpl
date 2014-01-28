@@ -1,4 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 " lang="{$lang_iso}"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="{$lang_iso}"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="{$lang_iso}"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js ie9" lang="{$lang_iso}"> <![endif]-->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{$lang_iso}">
 	<head>
 		<title>{$meta_title|escape:'htmlall':'UTF-8'}</title>
@@ -15,13 +19,13 @@
 		<link rel="icon" type="image/vnd.microsoft.icon" href="{$favicon_url}?{$img_update_time}" />
 		<link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}" />
 		<script type="text/javascript">
-			var baseDir = '{$content_dir}';
-			var baseUri = '{$base_uri}';
-			var static_token = '{$static_token}';
-			var token = '{$token}';
-			var priceDisplayPrecision = {$priceDisplayPrecision*$currency->decimals};
-			var priceDisplayMethod = {$priceDisplay};
-			var roundMode = {$roundMode};
+            var baseDir = '{$content_dir|addslashes}';
+            var baseUri = '{$base_uri|addslashes}';
+            var static_token = '{$static_token|addslashes}';
+            var token = '{$token|addslashes}';
+            var priceDisplayPrecision = {$priceDisplayPrecision*$currency->decimals};
+            var priceDisplayMethod = {$priceDisplay};
+            var roundMode = {$roundMode};
 		</script>
         {if isset($css_files)}
             {foreach from=$css_files key=css_uri item=media}
