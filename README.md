@@ -19,4 +19,4 @@ cachalot follows few points as a "philisophy" of use. Here they are :
 2. Review every TPL
 3. Adapts javascript files (if necessary)
 4. Swap to HTML5 tags
-5. Preview a port for prestashop 1.6
+5. Provide a port to prestashop 1.6
