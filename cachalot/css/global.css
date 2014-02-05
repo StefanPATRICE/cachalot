@@ -93,8 +93,8 @@
         .rte em, #tinymce em{text-decoration: underline}
         .rte p, #tinymce p{padding-bottom: .5em}
         .rte ul, #tinymce ul{padding-bottom: .5em}
-        .rte ul li, #tinymce ul li{list-style: outside disc; margin-left: 21px;}
-        .rte ol li, #tinymce ol li{list-style: outside decimal; margin-left: 21px;}
+        .rte ul li, #tinymce ul li{list-style: outside disc; margin-left: 1.2em;}
+        .rte ol li, #tinymce ol li{list-style: outside decimal; margin-left: 1.2em;}
 
 
 
