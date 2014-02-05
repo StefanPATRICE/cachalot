@@ -111,3 +111,122 @@
         float:left;
         width:50%;
     }
+
+        /* Title */
+        #pb-left-column h1 {}
+
+        /* Short description */
+         #short_description_block {}
+
+        /* Link to full description */
+        #short_description_block .buttons_bottom_block {}
+
+    /* "Buy Block" */
+    #buy_block {
+        background-color: #eee;
+    }
+
+        #buy_block label {
+            display: inline-block; *display: inline; *zoom:1;
+            width:33%;
+            text-align:right;
+            vertical-align:middle;
+        }
+
+        /* Product configuration */
+        .product_attributes > p{
+            padding-bottom: 10px;
+        }
+
+        /* Attribute selection */
+            .attribute_list {
+                display: inline-block; *display: inline; *zoom:1;
+                vertical-align: top;
+            }
+            .attribute_fieldset {
+                padding-bottom: 10px;
+            }
+                .attribute_list li{
+                    clear:both
+                }
+
+            /* Color Picker */
+            #color_to_pick_list li {
+                float:left;
+                clear:none;
+                margin:0 8px 8px 0;
+                border:1px solid transparent; /* For selected */
+            }
+
+            #color_to_pick_list li.selected {
+                border-color:#000;
+            }
+
+                #color_to_pick_list .color_pick {
+                    display:block;
+                    height:20px;
+                    width:20px;
+                }
+
+            /* Total quantity available (barely used) */
+            #pQuantityAvailable{
+                display: none;
+            }
+
+            /* Quantity input */
+            #quantity_wanted_p {}
+
+            /* Availability */
+            #availability_label {
+                /* refers to #buy_block label */
+                width: 33%;
+                display: inline-block;
+                text-align: right;
+                vertical-align: middle;
+            }
+
+
+            #availability_value {
+                color: green;
+            }
+
+            #availability_value.warning_inline {
+                color:#9B0000;
+            }
+
+    /* prices */
+    .content_prices {
+        text-align:right;
+    }
+
+    .discount {
+        display:none; /* JS Handled */
+    }
+
+    #old_price {
+        font-size:smaller;
+        text-decoration:line-through;
+    }
+
+    .our_price_display {
+        font-weight:bold;
+        font-size:xx-large;
+    }
+
+        /* Reductions */
+        #reduction_percent,#reduction_amount {
+            display:inline-block; *display:inline; *zoom:1;
+            font-weight: bold;
+            color: green;
+        }
+
+
+    /* online_only */
+    #buy_block .online_only {
+        color:#900;
+    }
+
+    /* add_to_cart button */
+    .content_prices #add_to_cart {
+        text-align: center;
+    }
