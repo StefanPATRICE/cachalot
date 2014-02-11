@@ -54,7 +54,6 @@
         .align-justify {text-align:justify}
 
     /* Text style */
-        .required {color:#990000}
         .bold, strong{font-weight: bold}
 
     /* Notification messages */
@@ -101,8 +100,8 @@
 
 
 /* ************************************************************************************************
-   $DEFAULT STYLE
-    "Redefining general aspect of an element everywhere on the website"
+   $DEFAULT COMPONENTS STYLE
+    "Redefining general aspect of an element / group of element everywhere on the website"
 *************************************************************************************************** */
 
     /* Basic text */
@@ -178,21 +177,41 @@
         }
 
     /* Forms */
-      form.std p {padding-bottom:20px}
+        .required sup {color:#990000}
+        .std p {padding-bottom:20px}
 
-      form.std .radio label{display:inline;}
+        /* Labels */
+        .std label,
+        .std .radio span,
+        .std .select > span{}
+
+        /* Sublabels (for radio / checkbox) */
+        .std .radio label,
+        .std .checkbox label{}
+
+        /* Text */
+        .std .text input,
+        .std .password input{}
+
+        /* Textarea */
+        .std .text input{}
+
+
+        /* Form notices */
+        .form_info{}
+
 
     /* Tables */
-        table.std{width: 100%;}
+        .std{width: 100%;}
 
         /* Header cell */
-        table.std th{}
+        .std th{}
 
         /* Footer cell */
-        table.std tfoot td{}
+        .std tfoot td{}
 
         /* Alternate line */
-        table.std tr.alternate_item{}
+        .std tr.alternate_item{}
 
     /* Tab */
         .idTabs { list-style-type: none; }
@@ -201,9 +220,6 @@
         .idTabs .selected { color: #000; }
 
         .sheets{}
-
-
-
 
     /* Breadcrumb */
         .breadcrumb {}
@@ -285,6 +301,7 @@
 /***************************************************************************************************
     $LAYOUT
     "Style and size of the main layout"
+    Dependancies : header.tpl, footer.tpl
 **************************************************************************************************** */
     body{}
     .main-wrapper {}
