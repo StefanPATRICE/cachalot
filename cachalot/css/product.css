@@ -173,6 +173,11 @@
                 display: none;
             }
 
+            /* Quantity minimal message */
+            #minimal_quantity_wanted_p{
+                padding-left:33%; /* Referers to label width */
+            }
+
             /* Quantity input */
             #quantity_wanted_p {}
 
